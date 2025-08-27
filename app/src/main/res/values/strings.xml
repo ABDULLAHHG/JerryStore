@@ -11,4 +11,9 @@
     <string name="right_arrow">right arrow</string>
     <string name="cheap_tom_section">Cheap tom section</string>
     <string name="search_filter">Search Filter</string>
+    <string name="card_button">Card button</string>
+    <string name="he_runs_1_meter_trips_over_his_boot">He runs 1 meter... trips over his boot.</string>
+    <string name="sport_tom">Sport Tom</string>
+    <string name="tom_eating">tom eating</string>
+    <string name="search_icon">Search Icon</string>
 </resources>
