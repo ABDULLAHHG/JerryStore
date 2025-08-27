@@ -236,7 +236,20 @@
                         android:text="He runs 1 meter... trips over his boot."
                         android:textAlignment="center"
                         android:textColor="#969799" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src=""
+
+                    </LinearLayout>
                 </LinearLayout>
+
+
 
 
             </LinearLayout>
