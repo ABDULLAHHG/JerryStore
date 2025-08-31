@@ -1,22 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#EEF4F6"
+    android:orientation="vertical"
+    android:scrollbars="none"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#EEF4F6"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingHorizontal="16dp"
-        android:paddingTop="@android:dimen/config_shapeCornerRadiusXlarge"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        android:paddingVertical="12dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -46,7 +45,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/hi_jerry"
-                    android:textColor="#1F1F1E"
+                    android:textColor="@color/title"
                     android:textSize="14sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -64,8 +63,7 @@
             <!-- PlaceHolder for notifiaction -->
             <LinearLayout
                 android:layout_width="40dp"
-                android:layout_height="40dp">
-            </LinearLayout>
+                android:layout_height="40dp"></LinearLayout>
         </LinearLayout>
 
         <LinearLayout
@@ -99,9 +97,7 @@
                     android:paddingVertical="1.5dp"
                     android:text="@string/search_about_tom"
                     android:textColor="#969799"
-                    android:textSize="14sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -188,9 +184,8 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/cheap_tom_section"
-                android:textColor="#1F1F1E"
+                android:textColor="@color/title"
                 android:textSize="20sp" />
-
 
             <TextView
                 android:layout_width="wrap_content"
@@ -205,101 +200,61 @@
                 android:layout_height="12dp"
                 android:contentDescription="@string/right_arrow"
                 android:src="@drawable/ic_arrow_right" />
-
         </LinearLayout>
 
-        <ScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-            <GridLayout
+            <include
+                layout="@layout/product"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:columnCount="2">
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1" />
 
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+            <include
+                layout="@layout/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="160dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:background="@drawable/bg_store_card"
-                        android:orientation="vertical"
-                        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                        <LinearLayout
+            <include
+                layout="@layout/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1" />
 
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="vertical">
-                            <!--PlaceHolder for card image -->
-                            <View
-                                android:layout_width="100dp"
-                                android:layout_height="84dp"
-                                android:layout_marginBottom="8dp" />
+            <include
+                layout="@layout/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:text="@string/sport_tom"
-                                android:textColor="#1F1F1E" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="54dp"
-                                android:layout_marginBottom="8.dp"
-                                android:text="@string/he_runs_1_meter_trips_over_his_boot"
-                                android:textAlignment="center"
-                                android:textColor="#969799" />
+            <include
+                layout="@layout/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1" />
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content">
+            <include
+                layout="@layout/product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
 
-                                <LinearLayout
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:background="@drawable/bg_price"
-                                    android:gravity="center_vertical"
-                                    android:paddingHorizontal="10dp"
-                                    android:paddingVertical="6dp">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:src="@drawable/ic_money_bag" />
-
-                                    <TextView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:layout_marginStart="4dp"
-                                        android:text="3 cheeses" />
-                                </LinearLayout>
-
-                                <ImageButton
-                                    style="@style/AddToCardButton"
-                                    android:layout_gravity="center_vertical"
-                                    android:layout_marginStart="8dp"
-                                    android:padding="7dp" />
-
-                            </LinearLayout>
-                        </LinearLayout>
-                    </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center_horizontal"
-                        android:contentDescription="@string/tom_eating"
-                        android:src="@drawable/img_eating_tom" />
-                </FrameLayout>
-            </GridLayout>
-        </ScrollView>
     </LinearLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
