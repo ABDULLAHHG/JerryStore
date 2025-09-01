@@ -32,7 +32,7 @@
             <TextView
                 android:id="@+id/product_description"
                 style="@style/BodyText"
-                android:layout_width="144dp"
+                android:layout_width="wrap_content"
                 android:layout_height="54dp"
                 android:layout_marginBottom="8dp"
                 android:text="@string/he_runs_1_meter_trips_over_his_boot"
