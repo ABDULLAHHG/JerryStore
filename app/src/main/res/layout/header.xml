@@ -9,7 +9,7 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:contentDescription="@string/jerry_image"
-        android:src="@drawable/img_sleeping_jerry"/>
+        android:src="@drawable/img_sleeping_jerry" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -35,15 +35,25 @@
 
     </LinearLayout>
     <!-- PlaceHolder for notifiaction -->
-    <LinearLayout
-        android:background="@drawable/bg_notification"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:gravity="center">
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@drawable/ic_notification"/>
+    <FrameLayout
+        android:layout_width="41dp"
+        android:layout_height="44dp">
 
-    </LinearLayout>
+        <ImageView
+            android:layout_gravity="bottom"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_notification"    android:padding="8dp"
+            android:src="@drawable/ic_notification" />
+
+        <TextView
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="end"
+            android:background="@drawable/bg_notification_count"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp" />
+    </FrameLayout>
 </LinearLayout>
