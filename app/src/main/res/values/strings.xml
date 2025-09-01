@@ -16,4 +16,20 @@
     <string name="sport_tom">Sport Tom</string>
     <string name="tom_eating">tom eating</string>
     <string name="search_icon">Search Icon</string>
+    <string name="_3_cheeses">3 cheeses</string>
+    <string name="tom_the_lover_description">He loves one-sidedly... and is beaten by the other side.</string>
+    <string name="scared_tom_description">He blows himself up before Jerry can catch him.</string>
+    <string name="crying_tom_description">Disguises itself as a table.</string>
+    <string name="frozen_tom_description">He was chasing Jerry, he froze after the first look</string>
+    <string name="sleeping_tom_description">"He doesn't chase anyone, he just snores in stereo. "</string>
+    <string name="tom_the_lover_price">5 cheeses</string>
+    <string name="scared_tom_price">10 cheeses</string>
+    <string name="crying_tom_price">12 cheeses</string>
+    <string name="frozen_tom_price">10 cheeses</string>
+    <string name="sleeping_tom_price">10 cheeses</string>
+    <string name="tom_the_lover_name">Tom the lover</string>
+    <string name="scared_tom_name">Tom the bomb</string>
+    <string name="crying_tom_name">Spy Tom</string>
+    <string name="frozen_tom_name">Frozen Tom</string>
+    <string name="sleeping_tom_name">Sleeping Tom</string>
 </resources>

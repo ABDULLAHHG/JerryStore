@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@string/jerry_image"
+        android:src="@drawable/img_sleeping_jerry"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingVertical="4.5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hi_jerry"
+            android:textColor="@color/title"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/which_tom_do_you_want_to_buy"
+            android:textColor="#A5A6A4"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+    <!-- PlaceHolder for notifiaction -->
+    <LinearLayout
+        android:background="@drawable/bg_notification"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_notification"/>
+
+    </LinearLayout>
+</LinearLayout>
