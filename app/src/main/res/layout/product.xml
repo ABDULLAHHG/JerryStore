@@ -26,6 +26,9 @@
                 android:id="@+id/product_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/ibm_plex_sans_arabic_semi_bold"
+                android:textSize="18sp"
+                android:letterSpacing="0"
                 android:text="@string/sport_tom"
                 android:textColor="@color/title" />
 
@@ -35,6 +38,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="54dp"
                 android:layout_marginBottom="8dp"
+                android:fontFamily="@font/ibm_plex_sans_arabic_regular"
+                android:textSize="12sp"
+                android:letterSpacing="0"
                 android:text="@string/he_runs_1_meter_trips_over_his_boot"
                 android:textAlignment="center" />
 
@@ -62,6 +68,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
                         android:maxLines="1"
+                        android:textSize="12sp"
+                        android:letterSpacing="0"
+                        android:fontFamily="@font/ibm_plex_sans_arabic_medium"
                         android:text="@string/_3_cheeses" />
                 </LinearLayout>
 

@@ -2,8 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingBottom="12dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingBottom="12dp">
 
 
     <LinearLayout
@@ -15,6 +15,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:fontFamily="@font/ibm_plex_sans_arabic_semi_bold"
+            android:letterSpacing="0"
             android:text="@string/cheap_tom_section"
             android:textColor="@color/title"
             android:textSize="20sp" />
@@ -22,6 +24,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/ibm_plex_sans_arabic_medium"
+            android:letterSpacing="0"
             android:paddingEnd="4dp"
             android:text="@string/view_all"
             android:textColor="#03578A"
