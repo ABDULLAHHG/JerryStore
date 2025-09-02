@@ -61,12 +61,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
+        android:scaleType="centerCrop"
         android:src="@drawable/ellipse_1" />
 
     <ImageView
+        android:rotation="10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end"
+        android:scaleType="centerCrop"
+        android:translationX="2dp"
         android:src="@drawable/ellipse_2" />
 </FrameLayout>
 

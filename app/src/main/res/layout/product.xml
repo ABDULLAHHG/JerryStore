@@ -63,13 +63,24 @@
                         android:src="@drawable/ic_money_bag" />
 
                     <TextView
-                        android:id="@+id/product_price"
+                        android:id="@+id/old_product_price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="4dp"
                         android:maxLines="1"
                         android:textSize="12sp"
                         android:letterSpacing="0"
+                        android:textColor="#03578A"
+                        android:fontFamily="@font/ibm_plex_sans_arabic_medium"
+                        android:text=""/>
+                    <TextView
+                        android:id="@+id/product_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textSize="12sp"
+                        android:letterSpacing="0"
+                        android:textColor="#03578A"
                         android:fontFamily="@font/ibm_plex_sans_arabic_medium"
                         android:text="@string/_3_cheeses" />
                 </LinearLayout>

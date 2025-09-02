@@ -1,5 +1,6 @@
 package com.aboud.jerryStore
 
+import android.graphics.Paint.STRIKE_THRU_TEXT_FLAG
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -20,6 +21,9 @@ class MainActivity : AppCompatActivity() {
 
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.productSection.product1.oldProductPrice.text = getString(R.string.old_price)
+        binding.productSection.product1.oldProductPrice.paintFlags = binding.productSection.product1.oldProductPrice.paintFlags or STRIKE_THRU_TEXT_FLAG
+
         binding.productSection.product2.productImage.setImageResource(R.drawable.img_lover_tom)
         binding.productSection.product2.productName.text = getString(R.string.tom_the_lover_name)
         binding.productSection.product2.productDescription.text = getString(R.string.tom_the_lover_description)
