@@ -4,7 +4,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="24dp">
+    android:fitsSystemWindows="true"
+    android:background="#EEF4F6">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,6 +18,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
             android:orientation="vertical"
             android:paddingHorizontal="16dp"
             android:paddingVertical="12dp">
